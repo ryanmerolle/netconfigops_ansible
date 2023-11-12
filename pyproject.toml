@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "netconfigops-ansible"
+version = "0.1.0"
+description = "Network Configuration Ops Ansible Collection"
+authors = ["ryanmerolle"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.12"
+hier-config = "^2.2.2"
+
+[tool.poetry.group.dev.dependencies]
+ansible-core = "^2.14"
+ruff = "*"
+yamllint = "*"
+ansible-lint = "*"
+molecule = "*"
+antsibull = "*"
+antsibull-docs = "*"
+invoke = "*"
+pre-commit = "*"
+pytest = "*"
+pytest-cov = "*"
+sourcery = "*"
+sourcery-cli = "*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
