@@ -15,6 +15,12 @@ Network Configuration Ops Ansible Collection
 - **Leverage Off Box Backup:** Build all of the above using existing running configuration backups
 - **Backup Device:** Backup the device no matter the platform
 - **Validate Intended Configuration:** Validate that the configuration order, spacing, and syntax is valid for the platform
+- **Apply Configuration:**
+  - Full configuration replace
+  - Only configuration remediation
+- **Apply Configuration Backout:**
+  - Full configuration replace
+  - Only configuration remediation
 
 ## Dependencies
 
