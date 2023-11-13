@@ -1,0 +1,64 @@
+---
+site_name: Ansible Collection - ryanmerolle.netconfigops
+site_author: Ryan Merolle
+site_description: Network Configuration Ops Ansible Collection
+repo_url: hhttps://github.com/ryanmerolle/netconfigops_ansible
+repo_name: ryanmerolle/mkdocs-playground
+
+# Configuration
+use_directory_urls: false
+theme:
+  name: material
+  icon:
+    repo: fontawesome/brands/github
+  features:
+    - content.action.edit
+    - content.code.annotate
+    - content.code.copy
+    - content.tabs.link
+    - header.autohide
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.tabs
+    - navigation.tabs.sticky
+    #- navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - toc.follow
+
+plugins:
+  - search
+  #- offline
+  #- drawio_file
+  - mkdocstrings
+  - git-revision-date-localized:
+      type: date
+      fallback_to_build_date: true
+  - git-committers:
+      repository: ryanmerolle/mkdocs-playground
+      branch: dev
+
+# TOC
+docs_dir: ansible_collections/ryanmerolle/netconfigops/
+nav:
+  - Home: README.md
+  - Roles:
+      - Apply Config: roles/apply_config/README.md
+      - Backup: roles/backup/README.md
+      - Build Backout: roles/build_backout/README.md
+      - Build Diff: roles/build_diff/README.md
+      - Build Remediation: roles/build_remediation/README.md
+  - Plugins:
+    - Plugins: plugins/README.md
+    - Filter Plugins: plugins/filter/README.md
+  #- Getting Started: getting_started.md
+  #- Installation: installation.md
+  #- Ansible Collection Roles: ansible_collection_roles.md
+  #- Contributing:
+  #    - As an operator: contributing/operator.md
+  #    - As a developer: contributing/developer.md
+  #    - CI: contributing/ci.md
+  #- External Resources: external_resources.md
+  #- Release Notes: release_notes.md
+  #- About: about.md
