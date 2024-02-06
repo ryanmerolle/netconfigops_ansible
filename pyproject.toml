@@ -10,7 +10,7 @@ python = ">=3.9,<3.12"
 hier-config = "^2.2.2"
 
 [tool.poetry.group.dev.dependencies]
-ansible-core = "^2.14"
+ansible-core = "^2.15"
 ansible-lint = "*"
 invoke = "*"
 mdx_truly_sane_lists = "*"
